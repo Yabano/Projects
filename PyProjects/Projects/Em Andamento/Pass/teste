@@ -1,0 +1,15 @@
+import random
+
+MAX = 9
+
+nums = []
+lista = [1,2,3,4,5,6,7,8,9]
+for i in range(len(lista)):
+    lista = [1,2,3,4,5,6,7,8,9]
+    newlist = []
+    for j in range(MAX):
+        numRand = random.choice(lista)
+        lista.remove(numRand)
+        newlist.append(numRand)
+    nums.append(newlist)
+print(nums)
